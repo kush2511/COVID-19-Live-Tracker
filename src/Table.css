@@ -1,0 +1,37 @@
+.table{
+   margin-top: 20px;
+   overflow: scroll;
+   height: 400px;
+   color: #6a5d5d;
+   background-color: white;
+}
+
+.table tr{
+    display: flex;
+    justify-content: space-between;
+    background-color: #d6d5d5;
+    cursor: pointer;
+    /* content-visibility: auto; */
+}
+
+.table td{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.table tr:nth-of-type(odd){
+    background-color: #f3f2f8;
+}
+
+.table__flag{
+    width: 30px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.table__flagName{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(72, 72, 72); 
+  }

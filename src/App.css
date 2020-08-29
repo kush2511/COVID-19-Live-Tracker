@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito:wght@400;900&family=Open+Sans&family=Quicksand:wght@500&family=Varela+Round&display=swap');
+*{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #f5f6fa;
+  font-family: 'Varela Round', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__left{
+  flex: 0.9;
+}
+
+.app__flag{
+  /* height: 50px; */
+  width: 40px !important;
+  object-fit: contain !important;
+  margin-right: 4px !important;
+  margin-bottom: -8px;
+}
+
+.app__flagName{
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #555 !important;
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.MuiSelect-outlined.MuiSelect-outlined {
+  display: flex;
+  align-items: center;
+}
+
+.app__dropdown{
+  background-color: #f5f6fa !important;
+  outline: none !important;
+  width: 200px !important;
+  color: black !important;
+}
+
+.app__header > img{
+  height: 50px;
+  object-fit: contain;
+}
+
+.MuiMenu-list{
+  background-color: #ebebeb;
+}
+
+/* .app__name{
+  float: right;
+  margin-top: 17px;
+} */
+
+.app__stats{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app__right{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app__right .MuiCardContent-root{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app__graph{
+  flex-grow: 1;
+  position: relative;
+  margin: auto;
+  height: 20vh;
+  width: 40vw;
+}
+
+.app__graphTitle{
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.app__recover{
+  color: green !important;
+}
+
+@media (max-width: 990px){
+  .app{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  /* .app__stats{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+  } */
+  .app__right{
+    margin-top: 20px;
+  }
+  .app__flag{
+    width: 35px;
+    object-fit: contain;
+  }
+  
+  .app__flagName{
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .app__header > img{
+    height: 40px;
+    object-fit: contain;
+  }
+  .app__graph{
+    width: 95vw;
   }
 }

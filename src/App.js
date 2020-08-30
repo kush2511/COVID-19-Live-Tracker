@@ -10,6 +10,7 @@ import TextField from "@material-ui/core/TextField";
 import { Autocomplete } from '@material-ui/lab';
 import { makeStyles } from "@material-ui/core/styles";
 import 'leaflet/dist/leaflet.css';
+import Footer from './Footer';
 
 function App() {
 
@@ -204,6 +205,10 @@ function App() {
         </CardContent>
 
       </Card>
+
+      <div class="app__footer">
+        <Footer/>
+      </div>
 
     </div>
   );

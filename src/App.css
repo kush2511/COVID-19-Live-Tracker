@@ -12,6 +12,7 @@ body{
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
+  flex-wrap: wrap;
 }
 
 .app__header{
@@ -22,7 +23,8 @@ body{
 }
 
 .app__left{
-  flex: 0.9;
+  flex: 1;
+  margin-right: 10px;
 }
 
 .app__flag{
@@ -101,6 +103,11 @@ body{
   color: green !important;
 }
 
+.app__footer{
+  
+  margin-top: 20px;
+}
+
 @media (max-width: 990px){
   .app{
     flex-direction: column;
@@ -110,6 +117,9 @@ body{
     justify-content: space-between;
     height: 400px;
   } */
+.app__left{
+  margin-right: 0;
+}
   .app__right{
     margin-top: 20px;
   }
@@ -125,10 +135,10 @@ body{
     font-family: 'Quicksand', sans-serif;
   }
   .app__header > img{
-    height: 40px;
+    height: 38px;
     object-fit: contain;
   }
   .app__graph{
-    width: 95vw;
+    width: 85vw;
   }
 }
